@@ -1,23 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>exercicio_html_js</title>
+    <title>calcualdora de media</title>
 </head>
 
 <body>
+    <header>
+        <img src="images/logo.png" alt="capelo e diploma">
+        <h1>Calculadora de medias</h1>
+    </header>
     <form action="">
-        <label for="n1">Numero 1</label>
-        <input placeholder="Insira um numero" required type="number" id="n1">
-        <label for="n2">Numero 2</label>
-        <input placeholder="Insira um numero" required type="number" id="n2">
-        <button onclick="submit" id="btn-form" type="submit">Enviar</button>
+        <input type="text" required placeholder="Nome da atividade">
+        <input type="number" required placeholder="Nota da atividade" min="0" max="10">
+        <button type="submit">Adicionar +</button>
     </form>
-
-    <script src="main.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Nome da atividade
+                </th>
+                <th>
+                    Nota da atividade
+                </th>
+                <th>
+                    Aprovado?
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Atividade 1
+                </td>
+                <td>7</td>
+                <td><img src="images/aprovado.png" alt="Emoji festejando"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Media final</td>
+                <td>7</td>
+                <td>Aprovado</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 
 </html>
