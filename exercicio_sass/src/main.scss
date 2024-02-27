@@ -1,0 +1,19 @@
+@use './components/reset/reset.scss';
+
+@use './components/container/container.scss';
+
+@use './components/header/header.scss';
+
+@use './components/products/products.scss';
+
+@use './components/settings/settings.scss';
+
+@use './components/colors/colors.scss';
+
+body {
+    background-color: colors.$background;
+}
+
+section {
+    padding: 56px 0;
+}
